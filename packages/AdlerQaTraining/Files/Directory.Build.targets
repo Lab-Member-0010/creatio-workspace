@@ -1,0 +1,19 @@
+<Project>
+    <ItemGroup Condition="'$(PkgPath)' != ''">
+        <Compile Remove="$(PkgPath)/AdlerQaTraining/Assemblies/**" />
+        <Compile Remove="$(PkgPath)/AdlerQaTraining/Data/**" />
+        <Compile Remove="$(PkgPath)/AdlerQaTraining/SqlScripts/**" />
+        <Compile Remove="$(PkgPath)/AdlerQaTraining/Schemas\**" />
+        <Compile Remove="$(PkgPath)/AdlerQaTraining/Resources/**" />
+        <EmbeddedResource Remove="$(PkgPath)/AdlerQaTraining/Assemblies/**" />
+        <EmbeddedResource Remove="$(PkgPath)/AdlerQaTraining/Data/**" />
+        <EmbeddedResource Remove="$(PkgPath)/AdlerQaTraining/SqlScripts/**" />
+        <EmbeddedResource Remove="$(PkgPath)/AdlerQaTraining/Schemas/**" />
+        <EmbeddedResource Remove="$(PkgPath)/AdlerQaTraining/Resources/**" />
+        <None Remove="$(PkgPath)/AdlerQaTraining/Assemblies/**" />
+        <None Remove="$(PkgPath)/AdlerQaTraining/Data/**" />
+        <None Remove="$(PkgPath)/AdlerQaTraining/SqlScripts/**" />
+        <None Remove="$(PkgPath)/AdlerQaTraining/Schemas/**" />
+        <None Remove="$(PkgPath)/AdlerQaTraining/Resources/**" />
+    </ItemGroup>
+</Project>

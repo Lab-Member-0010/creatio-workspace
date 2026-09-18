@@ -1,0 +1,25 @@
+﻿{
+  "Descriptor": {
+    "UId": "c396b9c5-6b9f-4b21-ab29-f3a420bbd525",
+    "PackageVersion": "1.0.0.0",
+    "Name": "AdlerQaTraining",
+    "Type": 1,
+    "InstallBehavior": 1,
+    "ModifiedOnUtc": "\/Date(1789722210000)\/",
+    "Maintainer": "AdlerQa",
+    "ProjectPath": "Files/AdlerQaTraining.csproj",
+    "DependsOn": [
+      {
+        "UId": "06d9ef10-51d8-122c-8933-9212e84236c9",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtBase"
+      },
+      {
+        "UId": "3a71e376-9ac3-3049-c62b-9c43b9abe054",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtCoreBase",
+        "Type": 1
+      }
+    ]
+  }
+}
