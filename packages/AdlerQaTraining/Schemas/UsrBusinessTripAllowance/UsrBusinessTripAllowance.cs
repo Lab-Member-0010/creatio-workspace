@@ -9,7 +9,7 @@ namespace AdlerQaTrainingApp
 	public static class UsrBusinessTripAllowance
 	{
 
-		private const decimal PerDiemRate = 200m;
+		public const decimal PerDiemRate = 200m;
 
 		public static decimal CalculatePerDiemAllowance(DateTime arrival, DateTime departure) {
 			int days = (departure.Date - arrival.Date).Days;

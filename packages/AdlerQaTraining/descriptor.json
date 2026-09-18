@@ -8,6 +8,7 @@
     "ModifiedOnUtc": "\/Date(1789722210000)\/",
     "Maintainer": "AdlerQa",
     "ProjectPath": "Files/AdlerQaTraining.csproj",
+    "Description": "#OriginalMaintainer:AdlerQa",
     "DependsOn": [
       {
         "UId": "06d9ef10-51d8-122c-8933-9212e84236c9",
