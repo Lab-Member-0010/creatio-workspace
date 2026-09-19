@@ -1,20 +1,20 @@
 ﻿{
     "Descriptor":  {
-                       "UId":  "3708d607-a6cb-4f0e-acb9-01284c65f63b",
-                       "Name":  "SysSettings",
+                       "UId":  "bb8d5b58-f85e-421f-ba61-6684824e8778",
+                       "Name":  "SysSettingsValue",
                        "ModifiedOnUtc":  "/Date(1789810315003)/",
                        "InstallType":  2,
                        "Schema":  {
-                                      "UId":  "27aeadd6-d508-4572-8061-5b55b667c902",
-                                      "Name":  "SysSettings"
+                                      "UId":  "951b2bbb-0ba3-4049-9a29-b5d4c0b6d50f",
+                                      "Name":  "SysSettingsValue"
                                   },
                        "Columns":  [
                                        {
-                                           "ColumnUId":  "13aad544-ec30-4e76-a373-f0cff3202e24",
+                                           "ColumnUId":  "b1ffd2d8-2bd3-4c46-b9c0-782afb0996c0",
                                            "IsForceUpdate":  true,
                                            "IsKey":  false,
-                                           "ColumnName":  "Code",
-                                           "DataTypeValueUId":  "325a73b8-0f47-44a0-8412-7606f78003ac"
+                                           "ColumnName":  "FloatValue",
+                                           "DataTypeValueUId":  "ecbcce18-2a17-4ead-829a-9d02fa9578a4"
                                        },
                                        {
                                            "ColumnUId":  "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
@@ -24,32 +24,32 @@
                                            "DataTypeValueUId":  "23018567-a13c-4320-8687-fd6f9e3699bd"
                                        },
                                        {
-                                           "ColumnUId":  "eb971f1a-dd41-4668-99aa-1f2a6b61a1b9",
+                                           "ColumnUId":  "55472376-a4dd-40da-86c6-975ce4b898fa",
                                            "IsForceUpdate":  true,
                                            "IsKey":  false,
-                                           "ColumnName":  "IsCacheable",
+                                           "ColumnName":  "IsDef",
                                            "DataTypeValueUId":  "90b65bf8-0ffc-4141-8779-2420877af907"
                                        },
                                        {
-                                           "ColumnUId":  "764cd95a-59b3-4060-b17f-2797d5c76aaa",
+                                           "ColumnUId":  "f1bc0b27-2c46-4cae-ad23-3b8940587d4f",
                                            "IsForceUpdate":  true,
                                            "IsKey":  false,
-                                           "ColumnName":  "IsPersonal",
-                                           "DataTypeValueUId":  "90b65bf8-0ffc-4141-8779-2420877af907"
+                                           "ColumnName":  "Position",
+                                           "DataTypeValueUId":  "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
                                        },
                                        {
-                                           "ColumnUId":  "736c30a7-c0ec-4fa9-b034-2552b319b633",
+                                           "ColumnUId":  "8f1984bb-7bef-4220-9b49-9a12d0ebcd68",
                                            "IsForceUpdate":  true,
                                            "IsKey":  false,
-                                           "ColumnName":  "Name",
-                                           "DataTypeValueUId":  "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+                                           "ColumnName":  "SysAdminUnit",
+                                           "DataTypeValueUId":  "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
                                        },
                                        {
-                                           "ColumnUId":  "f7960a8a-1fd4-41d2-997a-fd78ea60075f",
+                                           "ColumnUId":  "0fde6f1e-22c5-48c7-9c89-6f0031e270de",
                                            "IsForceUpdate":  true,
                                            "IsKey":  false,
-                                           "ColumnName":  "ValueTypeName",
-                                           "DataTypeValueUId":  "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+                                           "ColumnName":  "SysSettings",
+                                           "DataTypeValueUId":  "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
                                        }
                                    ]
                    }

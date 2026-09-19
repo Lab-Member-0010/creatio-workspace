@@ -11,8 +11,20 @@
           "Value": "0f8b2793-2cd6-4f0b-872e-68686abcbcfd"
         },
         {
+          "SchemaColumnUId": "eb971f1a-dd41-4668-99aa-1f2a6b61a1b9",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "764cd95a-59b3-4060-b17f-2797d5c76aaa",
+          "Value": false
+        },
+        {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "Value": "Business trip per diem rate"
+        },
+        {
+          "SchemaColumnUId": "f7960a8a-1fd4-41d2-997a-fd78ea60075f",
+          "Value": "Float"
         }
       ]
     }
