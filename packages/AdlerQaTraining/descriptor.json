@@ -5,7 +5,7 @@
     "Name": "AdlerQaTraining",
     "Type": 1,
     "InstallBehavior": 1,
-    "ModifiedOnUtc": "\/Date(1789722210000)\/",
+    "ModifiedOnUtc": "\/Date(1789979148000)\/",
     "Maintainer": "AdlerQa",
     "ProjectPath": "Files/AdlerQaTraining.csproj",
     "Description": "#OriginalMaintainer:AdlerQa",
@@ -20,6 +20,10 @@
         "PackageVersion": "7.8.0",
         "Name": "CrtCoreBase",
         "Type": 1
+      },
+      {
+        "UId": "d6fa0605-7eb8-d1cc-c99d-d6209db3dfb0",
+        "Name": "AdlerQaTrainingCore"
       }
     ]
   }

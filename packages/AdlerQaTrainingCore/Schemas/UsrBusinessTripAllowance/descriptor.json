@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "86e55f07-b767-4a44-b2be-ada2fd2ea95f",
+    "Name": "UsrBusinessTripAllowance",
+    "ModifiedOnUtc": "\/Date(1789724442000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "UsrBusinessTripAllowance",
+    "DependsOn": []
+  }
+}
