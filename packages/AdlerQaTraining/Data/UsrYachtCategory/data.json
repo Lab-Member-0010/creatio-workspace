@@ -8,7 +8,7 @@
         },
         {
           "SchemaColumnUId": "78ad1003-08b5-7642-b9ff-df545818a2da",
-          "Value": ""
+          "Value": "#FFC107"
         }
       ]
     },
@@ -20,7 +20,7 @@
         },
         {
           "SchemaColumnUId": "78ad1003-08b5-7642-b9ff-df545818a2da",
-          "Value": ""
+          "Value": "#2196F3"
         }
       ]
     },
@@ -32,7 +32,7 @@
         },
         {
           "SchemaColumnUId": "78ad1003-08b5-7642-b9ff-df545818a2da",
-          "Value": ""
+          "Value": "#009688"
         }
       ]
     },
@@ -44,7 +44,7 @@
         },
         {
           "SchemaColumnUId": "78ad1003-08b5-7642-b9ff-df545818a2da",
-          "Value": ""
+          "Value": "#9C27B0"
         }
       ]
     },
@@ -56,7 +56,7 @@
         },
         {
           "SchemaColumnUId": "78ad1003-08b5-7642-b9ff-df545818a2da",
-          "Value": ""
+          "Value": "#4CAF50"
         }
       ]
     }
