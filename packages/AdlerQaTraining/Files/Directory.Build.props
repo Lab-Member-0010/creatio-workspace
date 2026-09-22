@@ -1,3 +1,11 @@
 <Project>
-	<ItemGroup Label="Entity Files" Condition="'$(PkgPath)' != ''"></ItemGroup>
+	<ItemGroup Label="Entity Files" Condition="'$(PkgPath)' != ''">
+		<Compile Include="$(PkgPath)/AdlerQaTraining/Schemas/Contact/Contact.cs" Condition="Exists('$(PkgPath)/AdlerQaTraining/Schemas/Contact/Contact.cs')" />
+		<Compile Include="$(PkgPath)/AdlerQaTraining/Schemas/UsrCategoryInYacht/UsrCategoryInYacht.cs" Condition="Exists('$(PkgPath)/AdlerQaTraining/Schemas/UsrCategoryInYacht/UsrCategoryInYacht.cs')" />
+		<Compile Include="$(PkgPath)/AdlerQaTraining/Schemas/UsrDriveType/UsrDriveType.cs" Condition="Exists('$(PkgPath)/AdlerQaTraining/Schemas/UsrDriveType/UsrDriveType.cs')" />
+		<Compile Include="$(PkgPath)/AdlerQaTraining/Schemas/UsrVwContactAccount/UsrVwContactAccount.cs" Condition="Exists('$(PkgPath)/AdlerQaTraining/Schemas/UsrVwContactAccount/UsrVwContactAccount.cs')" />
+		<Compile Include="$(PkgPath)/AdlerQaTraining/Schemas/UsrYacht/UsrYacht.cs" Condition="Exists('$(PkgPath)/AdlerQaTraining/Schemas/UsrYacht/UsrYacht.cs')" />
+		<Compile Include="$(PkgPath)/AdlerQaTraining/Schemas/UsrYachtCategory/UsrYachtCategory.cs" Condition="Exists('$(PkgPath)/AdlerQaTraining/Schemas/UsrYachtCategory/UsrYachtCategory.cs')" />
+		<Compile Include="$(PkgPath)/AdlerQaTraining/Schemas/UsrYachtStatus/UsrYachtStatus.cs" Condition="Exists('$(PkgPath)/AdlerQaTraining/Schemas/UsrYachtStatus/UsrYachtStatus.cs')" />
+	</ItemGroup>
 </Project>

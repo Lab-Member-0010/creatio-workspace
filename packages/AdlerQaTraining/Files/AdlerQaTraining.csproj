@@ -338,6 +338,11 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup Label="Package References">
+		<Reference Include="CrtCore">
+			<HintPath>$(RelativePkgFolderPath)/CrtCore/$(StandalonePackageAssemblyPath)/CrtCore.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
 		<Reference Include="CrtCoreBase">
 			<HintPath>$(RelativePkgFolderPath)/CrtCoreBase/$(StandalonePackageAssemblyPath)/CrtCoreBase.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
@@ -363,7 +368,15 @@
 			<Private>False</Private>
 		</Reference>
 	</ItemGroup>
-	<ItemGroup Label="Entity Files" />
+	<ItemGroup Label="Entity Files">
+		<Compile Remove="$(RelativePkgFolderPath)/AdlerQaTraining/Schemas/Contact/Contact.cs" Condition="Exists('$(RelativePkgFolderPath)/AdlerQaTraining/Schemas/Contact/Contact.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AdlerQaTraining/Schemas/UsrCategoryInYacht/UsrCategoryInYacht.cs" Condition="Exists('$(RelativePkgFolderPath)/AdlerQaTraining/Schemas/UsrCategoryInYacht/UsrCategoryInYacht.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AdlerQaTraining/Schemas/UsrDriveType/UsrDriveType.cs" Condition="Exists('$(RelativePkgFolderPath)/AdlerQaTraining/Schemas/UsrDriveType/UsrDriveType.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AdlerQaTraining/Schemas/UsrVwContactAccount/UsrVwContactAccount.cs" Condition="Exists('$(RelativePkgFolderPath)/AdlerQaTraining/Schemas/UsrVwContactAccount/UsrVwContactAccount.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AdlerQaTraining/Schemas/UsrYacht/UsrYacht.cs" Condition="Exists('$(RelativePkgFolderPath)/AdlerQaTraining/Schemas/UsrYacht/UsrYacht.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AdlerQaTraining/Schemas/UsrYachtCategory/UsrYachtCategory.cs" Condition="Exists('$(RelativePkgFolderPath)/AdlerQaTraining/Schemas/UsrYachtCategory/UsrYachtCategory.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AdlerQaTraining/Schemas/UsrYachtStatus/UsrYachtStatus.cs" Condition="Exists('$(RelativePkgFolderPath)/AdlerQaTraining/Schemas/UsrYachtStatus/UsrYachtStatus.cs')" />
+	</ItemGroup>
 	<ItemGroup Label="3rd Party References">
 		<Reference Include="Common.Logging">
 			<HintPath>$(CoreLibPath)\Common.Logging.dll</HintPath>

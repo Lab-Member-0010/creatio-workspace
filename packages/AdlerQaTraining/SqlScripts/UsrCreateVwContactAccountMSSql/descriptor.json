@@ -1,0 +1,11 @@
+﻿{
+  "SqlScript": {
+    "UId": "4be168fa-9db5-f111-aa1e-f1aa15718dfb",
+    "Name": "UsrCreateVwContactAccountMSSql",
+    "DBEngineType": 0,
+    "InstallType": 1,
+    "ModifiedOnUtc": "\/Date(1789984558000)\/",
+    "BackwardCompatibilityConfirmed": false,
+    "DependsOn": []
+  }
+}

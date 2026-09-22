@@ -2,12 +2,13 @@
   "Descriptor": {
     "UId": "74b78e13-32aa-455c-8dbc-ffe778187d8b",
     "Name": "UsrVwContactAccount",
-    "ModifiedOnUtc": "\/Date(1789980644000)\/",
+    "ModifiedOnUtc": "\/Date(1789980645000)\/",
     "Parent": {
       "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
       "Name": "BaseEntity"
     },
     "ManagerName": "EntitySchemaManager",
-    "Caption": "Contact and account view"
+    "Caption": "Contact and account view",
+    "DependsOn": []
   }
 }
