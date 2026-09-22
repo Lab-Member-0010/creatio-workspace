@@ -3,6 +3,14 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
 				"operation": "merge",
+				"name": "GeneralInfoTab",
+				"values": {
+					"iconPosition": "only-text",
+					"visible": true
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "Feed",
 				"values": {
 					"dataSourceName": "PDS",
@@ -66,6 +74,260 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ExpansionPanel_gk702ct",
+				"values": {
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(ExpansionPanel_gk702ct_title)#",
+					"toggleType": "default",
+					"togglePosition": "before",
+					"expanded": true,
+					"labelColor": "auto",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"padding": {
+						"top": "small",
+						"bottom": "small",
+						"left": "none",
+						"right": "none"
+					},
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch"
+				},
+				"parentName": "SideContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_lweyjlb",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 24px)",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_gk702ct",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_s3tsuzq",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"gap": "none",
+					"alignItems": "center",
+					"items": [],
+					"layoutConfig": {
+						"colSpan": 1,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_lweyjlb",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_0p0nnc0",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 32px)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": null
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": [],
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
+				},
+				"parentName": "ExpansionPanel_gk702ct",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_akfz5yc",
+				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrCaptain_nydf85l",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_UsrCaptain_nydf85l",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null,
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_0p0nnc0",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_skwm5b5",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_skwm5b5_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_akfz5yc",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DriveType",
+				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrDriveType_r5dyfqp",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_UsrDriveType_r5dyfqp",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null,
+					"secondaryDisplayValue": "Description",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_0p0nnc0",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_vmz81ct",
+				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrStatus_jhwznti",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_UsrStatus_jhwznti",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": "$ComboBox_vmz81ct_ValueDetails",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_0p0nnc0",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_bxzgzom",
+				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrManager_lk9xm55",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_UsrManager_lk9xm55",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null,
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_0p0nnc0",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_3dn431l",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_3dn431l_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_bxzgzom",
+				"propertyName": "listActions",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -133,133 +395,6 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_akfz5yc",
-				"values": {
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_UsrCaptain_nydf85l",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_UsrCaptain_nydf85l",
-					"visible": true,
-					"readonly": false,
-					"placeholder": "",
-					"valueDetails": null
-				},
-				"parentName": "GeneralInfoTab",
-				"propertyName": "items",
-				"index": 5
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_skwm5b5",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_skwm5b5_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_akfz5yc",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "ComboBox_bxzgzom",
-				"values": {
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_UsrManager_lk9xm55",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_UsrManager_lk9xm55",
-					"visible": true,
-					"readonly": false,
-					"placeholder": "",
-					"valueDetails": null
-				},
-				"parentName": "GeneralInfoTab",
-				"propertyName": "items",
-				"index": 6
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_3dn431l",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_3dn431l_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_bxzgzom",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DriveType",
-				"values": {
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_UsrDriveType_r5dyfqp",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": false,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_UsrDriveType_r5dyfqp",
-					"visible": true,
-					"readonly": false,
-					"placeholder": "",
-					"valueDetails": null,
-					"secondaryDisplayValue": "Description"
-				},
-				"parentName": "GeneralInfoTab",
-				"propertyName": "items",
-				"index": 7
-			},
-			{
-				"operation": "insert",
-				"name": "ComboBox_vmz81ct",
-				"values": {
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_UsrStatus_jhwznti",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": false,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_UsrStatus_jhwznti",
-					"visible": true,
-					"readonly": false,
-					"placeholder": "",
-					"valueDetails": "$ComboBox_vmz81ct_ValueDetails"
-				},
-				"parentName": "GeneralInfoTab",
-				"propertyName": "items",
-				"index": 8
-			},
-			{
-				"operation": "insert",
 				"name": "Categories",
 				"values": {
 					"type": "crt.MultiSelect",
@@ -276,7 +411,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 9
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -294,7 +429,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 10
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -312,7 +447,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 11
+				"index": 7
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
