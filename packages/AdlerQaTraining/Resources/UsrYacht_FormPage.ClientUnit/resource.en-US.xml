@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Yachts form page" />
+			<Item Name="LocalizableStrings.Button_9n1en10_caption.Value" Value="Push me" />
 			<Item Name="LocalizableStrings.Categories_label.Value" Value="Categories" />
 			<Item Name="LocalizableStrings.ExpansionPanel_gk702ct_title.Value" Value="Responsibility and state" />
 			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="Commercial" />
@@ -10,6 +11,7 @@
 			<Item Name="LocalizableStrings.addRecord_c1i8a4n_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_mss19j3_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_skwm5b5_caption.Value" Value="Add new" />
-		</Items>
+		<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Price cannot be less than the configured minimum." />
+</Items>
 	</Group>
 </Resources>

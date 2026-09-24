@@ -1,4 +1,4 @@
-define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("UsrYacht_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -157,7 +157,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					],
 					"gap": {
 						"columnGap": "large",
-						"rowGap": null
+						"rowGap": "none"
 					},
 					"styles": {
 						"overflow-x": "hidden"
@@ -395,6 +395,23 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
+				"name": "NumberInput_a6zosjh",
+				"values": {
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_UsrTicketPrice_2u1knbw",
+					"control": "$PDS_UsrTicketPrice_2u1knbw",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": "",
+					"visible": false
+				},
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
 				"name": "Categories",
 				"values": {
 					"type": "crt.MultiSelect",
@@ -411,7 +428,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 5
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -429,7 +446,26 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 6
+				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "Button_9n1en10",
+				"values": {
+					"type": "crt.Button",
+					"clicked": {
+						"request": "usr.PushButtonRequest"
+					},
+					"caption": "#ResourceString(Button_9n1en10_caption)#",
+					"color": "accent",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "only-text",
+					"visible": true
+				},
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 8
 			},
 			{
 				"operation": "insert",
@@ -447,7 +483,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 7
+				"index": 9
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -469,7 +505,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					},
 					"PDS_UsrPricePerDay_m1l2sy9": {
 						"modelConfig": {
-							"path": "PDS.UsrPricePerDay"
+							"path": "PDS.UsrPricePerDay" }, "validators": { "MySuperValidator": { "type": "usr.YTValidator", "params": { "settingCode": "UsrYachtMinPrice", "message": "#ResourceString(PriceCannotBeLess)#" } } 
 						}
 					},
 					"PDS_UsrCrewCount_xf1kh1r": {
@@ -576,6 +612,11 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					},
 					"Categories_List_Items_Predefined_Filter": {
 						"value": null
+					},
+					"PDS_UsrTicketPrice_2u1knbw": {
+						"modelConfig": {
+							"path": "PDS.UsrTicketPrice"
+						}
 					}
 				}
 			},
@@ -621,8 +662,19 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[{ request: "usr.PushButtonRequest", handler: async (request, next) => { Terrasoft.showInformation("My button was pressed."); const price = await request.$context.PDS_UsrPricePerDay_m1l2sy9; console.log("Price per day: " + price); request.$context.PDS_UsrComment_4g385v8 = "comment from JS code!"; return next?.handle(request); } }, { request: "crt.HandleViewModelAttributeChangeRequest", handler: async (request, next) => { if (request.attributeName === "PDS_UsrPricePerDay_m1l2sy9" || request.attributeName === "PDS_UsrPassengerCount_2y6t7oe") { const price = await request.$context.PDS_UsrPricePerDay_m1l2sy9; const passengers = await request.$context.PDS_UsrPassengerCount_2y6t7oe; request.$context.PDS_UsrTicketPrice_2u1knbw = (price > 0 && passengers > 0) ? (price / passengers) : 0; } return next?.handle(request); } }]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
-		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
+		validators: /**SCHEMA_VALIDATORS*/{
+"usr.YTValidator": { validator: function(config) { return async function(control) { let raw = control.value; 
+if (raw === undefined) { raw = null; } if (raw === null) { return null; } if (raw === "") { return null; } 
+const value = Number(raw); const setting = await new sdk.SysSettingsService().getByCode(config.settingCode); const minValue = Number(setting ? setting.value : NaN); 
+if (Number.isFinite(value) === false) { return { "usr.YTValidator": { message: config.message } }; } 
+if (Number.isFinite(minValue) === false) { return { "usr.YTValidator": { message: config.message } }; } 
+if (value >= minValue) { return null; } return { "usr.YTValidator": { message: config.message } }; }; }, params: [{ name: "settingCode" }, { name: "message" }], async: true },
+"usr.DGValidator": { validator: function(config) { return function(control) { let raw = control.value; 
+if (raw === undefined) { raw = null; } if (raw === null) { return null; } if (raw === "") { return null; } 
+const value = Number(raw); const minValue = Number(config.minValue); if (Number.isFinite(value) === false) { return { "usr.DGValidator": { message: config.message } }; } 
+if (value >= minValue) { return null; } return { "usr.DGValidator": { message: config.message } }; }; }, params: [{ name: "minValue" }, { name: "message" }], async: false }
+}/**SCHEMA_VALIDATORS*/
 	};
 });
