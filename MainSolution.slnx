@@ -6,4 +6,5 @@
     <BuildType Name="dev-nf" />
   </Configurations>
   <Project Path="packages\AdlerQaTraining\Files\AdlerQaTraining.csproj" />
+  <Project Path="packages\AdlerQaTrainingCore\Files\AdlerQaTrainingCore.csproj" />
 </Solution>

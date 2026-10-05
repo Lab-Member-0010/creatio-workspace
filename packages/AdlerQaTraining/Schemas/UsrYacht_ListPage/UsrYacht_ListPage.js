@@ -26,6 +26,10 @@ define("UsrYacht_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"name": "DataTable",
 				"values": {
 					"columns": [
+{ "id": "85dcf76a-0bf9-4fd5-9106-cb3e50f8d6f2", "code": "PDS_UsrPricePerDay", "caption": "Price per day, USD", "dataValueType": 5 },
+{ "id": "bb74646d-31c7-4795-8332-791b56faaf4f", "code": "PDS_UsrPassengerCount", "caption": "Passenger count", "dataValueType": 4 },
+{ "id": "ffae162e-9a4c-4971-b80c-500f00b347ff", "code": "PDS_UsrManager", "caption": "Manager", "dataValueType": 10 },
+{ "id": "bd4871b7-e950-4168-86e3-dfd312a83a1d", "code": "PDS_UsrTicketPrice", "caption": "Ticket price", "dataValueType": 5 },
 						{
 							"id": "f252f581-0ccf-44ac-b7c9-c00df2ad9919",
 							"code": "PDS_UsrName",
@@ -84,7 +88,11 @@ define("UsrYacht_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"path": "PDS.CreatedOn"
 						}
 					},
-					"PDS_CreatedBy": {
+					"PDS_UsrPricePerDay": { "modelConfig": { "path": "PDS.UsrPricePerDay" } },
+"PDS_UsrPassengerCount": { "modelConfig": { "path": "PDS.UsrPassengerCount" } },
+"PDS_UsrManager": { "modelConfig": { "path": "PDS.UsrManager" } },
+"PDS_UsrTicketPrice": { "modelConfig": { "path": "PDS.UsrTicketPrice" } },
+"PDS_CreatedBy": {
 						"modelConfig": {
 							"path": "PDS.CreatedBy"
 						}

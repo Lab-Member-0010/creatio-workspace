@@ -1,0 +1,21 @@
+{
+  "Name": "AdlerQaTraining",
+  "Description": "",
+  "Maintainer": "Customer",
+  "Icon": "",
+  "IconName": "",
+  "Color": "#FFAC07",
+  "Version": "0.1.0",
+  "RequiredPlatformVersion": "8.3.3",
+  "MarketplaceLink": "",
+  "HelpLink": "",
+  "OrderLink": "",
+  "SupportEmail": "",
+  "Code": "AdlerQaTraining",
+  "Packages": [
+    {
+      "UId": "c396b9c5-6b9f-4b21-ab29-f3a420bbd525",
+      "Name": "AdlerQaTraining"
+    }
+  ]
+}

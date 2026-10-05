@@ -338,11 +338,6 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup Label="Package References">
-		<Reference Include="CrtCore">
-			<HintPath>$(RelativePkgFolderPath)/CrtCore/$(StandalonePackageAssemblyPath)/CrtCore.dll</HintPath>
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
 		<Reference Include="CrtCoreBase">
 			<HintPath>$(RelativePkgFolderPath)/CrtCoreBase/$(StandalonePackageAssemblyPath)/CrtCoreBase.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
