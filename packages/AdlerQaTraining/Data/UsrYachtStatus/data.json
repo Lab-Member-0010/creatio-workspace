@@ -1,0 +1,84 @@
+{
+    "PackageData":  [
+                        {
+                            "Row":  [
+                                        {
+                                            "Value":  "B278EBBE-9BBE-4C08-A16D-C40B2B8E9088",
+                                            "SchemaColumnUId":  "ae0e45ca-c495-4fe7-a39d-3ab7278e1617"
+                                        },
+                                        {
+                                            "Value":  "Afloat",
+                                            "SchemaColumnUId":  "736c30a7-c0ec-4fa9-b034-2552b319b633"
+                                        },
+                                        {
+                                            "Value":  "",
+                                            "SchemaColumnUId":  "9e53fd7c-dde4-4502-a64c-b9e34148108b"
+                                        }
+                                    ]
+                        },
+                        {
+                            "Row":  [
+                                        {
+                                            "Value":  "FB1DCB64-F440-4CC0-B6BE-5B0804A7DF6F",
+                                            "SchemaColumnUId":  "ae0e45ca-c495-4fe7-a39d-3ab7278e1617"
+                                        },
+                                        {
+                                            "Value":  "In maintenance",
+                                            "SchemaColumnUId":  "736c30a7-c0ec-4fa9-b034-2552b319b633"
+                                        },
+                                        {
+                                            "Value":  "",
+                                            "SchemaColumnUId":  "9e53fd7c-dde4-4502-a64c-b9e34148108b"
+                                        }
+                                    ]
+                        },
+                        {
+                            "Row":  [
+                                        {
+                                            "Value":  "CDB47940-D03A-4BCE-9533-15DDC4A491AF",
+                                            "SchemaColumnUId":  "ae0e45ca-c495-4fe7-a39d-3ab7278e1617"
+                                        },
+                                        {
+                                            "Value":  "Operational",
+                                            "SchemaColumnUId":  "736c30a7-c0ec-4fa9-b034-2552b319b633"
+                                        },
+                                        {
+                                            "Value":  "",
+                                            "SchemaColumnUId":  "9e53fd7c-dde4-4502-a64c-b9e34148108b"
+                                        }
+                                    ]
+                        },
+                        {
+                            "Row":  [
+                                        {
+                                            "Value":  "514C68C2-BDB8-4DAD-B12B-D568B95EB0AA",
+                                            "SchemaColumnUId":  "ae0e45ca-c495-4fe7-a39d-3ab7278e1617"
+                                        },
+                                        {
+                                            "Value":  "Out of order",
+                                            "SchemaColumnUId":  "736c30a7-c0ec-4fa9-b034-2552b319b633"
+                                        },
+                                        {
+                                            "Value":  "",
+                                            "SchemaColumnUId":  "9e53fd7c-dde4-4502-a64c-b9e34148108b"
+                                        }
+                                    ]
+                        },
+                        {
+                            "Row":  [
+                                        {
+                                            "Value":  "3FA04EC8-3EC9-4D5D-8ED7-D0BB5A1DFB51",
+                                            "SchemaColumnUId":  "ae0e45ca-c495-4fe7-a39d-3ab7278e1617"
+                                        },
+                                        {
+                                            "Value":  "Sunk",
+                                            "SchemaColumnUId":  "736c30a7-c0ec-4fa9-b034-2552b319b633"
+                                        },
+                                        {
+                                            "Value":  "",
+                                            "SchemaColumnUId":  "9e53fd7c-dde4-4502-a64c-b9e34148108b"
+                                        }
+                                    ]
+                        }
+                    ]
+}
